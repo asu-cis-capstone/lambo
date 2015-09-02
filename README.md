@@ -13,12 +13,11 @@ Additionally, as part of this update they are requesting:
 
 
 ## Project Team
----------------------------------------------------------------------
 
-Zachary Baumgartner
-Skyler Hewitt
-Xiaotong Liu
-Siqian (Jackie) Tong
+Zachary Baumgartner  
+Skyler Hewitt  
+Xiaotong Liu  
+Siqian (Jackie) Tong  
 Xuewei (Summer) Zhu
 
  
