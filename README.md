@@ -1,6 +1,6 @@
-# Project Lambo
+### Project Lambo
 
-# OnPointDetailing Website Update
+## OnPointDetailing Website Update
 
 Onpoint Mobile Detailing is looking to move from their current website, built using a prepaid template, to a fully featured customizable site built just for them.
 
@@ -21,6 +21,6 @@ Siqian (Jackie) Tong
 Xuewei (Summer) Zhu
 
  
-# Waffle.io Task Board
+### Waffle.io Task Board
 
 [![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/lambo.svg?label=ready&title=Ready)](http://waffle.io/asu-cis-capstone/lambo)
