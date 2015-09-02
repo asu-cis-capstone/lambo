@@ -16,11 +16,11 @@ Additionally, as part of this update they are requesting:
 
 Zachary Baumgartner  
 Skyler Hewitt  
-Xiaotong Liu  
+Xiaotong (Sarah) Liu  
 Siqian (Jackie) Tong  
 Xuewei (Summer) Zhu
 
  
-
+# Waffle.io Task Board
 
 [![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/lambo.svg?label=ready&title=Ready)](http://waffle.io/asu-cis-capstone/lambo)
