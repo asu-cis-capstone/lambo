@@ -21,7 +21,7 @@ Additionally, as part of this update they are requesting:
 
 Zachary Baumgartner | zbaumgar@asu.edu  
 Skyler Hewitt | Skyler.Hewitt@asu.edu  
-Xiaotong (Sarah) Liu  
+Xiaotong (Sarah) Liu | violetxt@gmai.com  
 Siqian (Jackie) Tong |  stong2@asu.edu  
 Xuewei (Summer) Zhu
 
