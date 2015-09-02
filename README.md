@@ -23,7 +23,7 @@ Zachary Baumgartner | zbaumgar@asu.edu
 Skyler Hewitt | srhewitt@asu.edu  
 Xiaotong (Sarah) Liu | violetxt@gmail.com  
 Siqian (Jackie) Tong |  stong2@asu.edu  
-Xuewei (Summer) Zhu  
+Xuewei (Summer) Zhu  |  xzhu74@asu.edu
 
  
 ### Waffle.io Task Board
