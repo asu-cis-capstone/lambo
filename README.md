@@ -19,7 +19,7 @@ Additionally, as part of this update they are requesting:
 
 ## Project Team
 
-Zachary Baumgartner  
+Zachary Baumgartner, zbaumgar@asu.edu
 Skyler Hewitt  
 Xiaotong (Sarah) Liu  
 Siqian (Jackie) Tong  
