@@ -22,7 +22,7 @@ Additionally, as part of this update they are requesting:
 Zachary Baumgartner, zbaumgar@asu.edu
 Skyler Hewitt  
 Xiaotong (Sarah) Liu  
-Siqian (Jackie) Tong  
+Siqian (Jackie) Tong,  stong2@asu.edu
 Xuewei (Summer) Zhu
 
  
