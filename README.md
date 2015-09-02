@@ -14,7 +14,7 @@ Additionally, as part of this update they are requesting:
 ## Installation instructions
 
 1. Have a web server running a full LAMP stack
-2. Simply drop the contents of the www directory into your web servers root directory
+2. Simply drop the contents of the www directory into your web server's root directory
 
 
 ## Project Team
