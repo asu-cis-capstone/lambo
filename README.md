@@ -2,19 +2,18 @@
 
 ## On Point Detailing Website Update
 
-On Point Mobile Detailing is looking to move from their current website, built using a prepaid template, to a fully featured customizable site built just for them.
-
-Additionally, as part of this update they are requesting:
-- Have a functional mobile site
-- Branding change to "On Point Detailing"
-- Customer scheduling system
-- Implementation of RDBMS to manage not only customers and invoices but also wholesalers
-- The ability to connect with their social media accounts
+On Point Detailing's new website will provide:
+- A mobile version for easy use on phones/tablets
+- Information on various services
+- A way for customers to schedule appointments
+- Social media integration
+- Database administration
 
 ## Installation instructions
 
 1. Have a web server running a full LAMP stack
-2. Simply drop the contents of the www directory into your web server's root directory
+2. Drop the contents of the www directory into your web server's root directory
+3. Run the sql script to create the necessary databases
 
 
 ## Project Team
