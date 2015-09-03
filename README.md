@@ -19,11 +19,11 @@ Additionally, as part of this update they are requesting:
 
 ## Project Team
 
-Zachary Baumgartner  |  zbaumgar@asu.edu  
-Skyler Hewitt        |  srhewitt@asu.edu  
-Xiaotong (Sarah) Liu |  xliu149@asu.edu  
-Siqian (Jackie) Tong |  stong2@asu.edu  
-Xuewei (Summer) Zhu  |  xzhu74@asu.edu
+Zachary Baumgartner  
+Skyler Hewitt        
+Xiaotong (Sarah) Liu  
+Siqian (Jackie) Tong  
+Xuewei (Summer) Zhu  
 
  
 ### Waffle.io Task Board
