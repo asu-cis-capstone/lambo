@@ -1,7 +1,7 @@
 Hello World 
 <br />
 <?php
-include_once('config.php');
+include_once('DBInfo.config');
 
 $connection = new mysqli($server, $user, $password, $db);
 
