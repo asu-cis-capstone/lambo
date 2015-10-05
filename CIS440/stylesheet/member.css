@@ -1,0 +1,279 @@
+/*
+project
+css3.css
+Spring 2015
+Siqian Tong
+*/
+
+body{
+	width:				95%;
+	color:				white;
+	margin:				auto;
+	font-family:		Times New Roman, Calibri,Helvetica,Arial, sans-serif;
+	background-color:	black;
+}
+
+#header {
+	clear:				both;
+	text-align:			center;
+	margin-bottom:		5px;
+	border-bottom:		1px solid #4169e1;
+}
+
+.sh2 {
+	font-size:			110%;
+	font-weight:		bold;
+}
+
+#navbars {
+	float:				right;
+	position:			relative;
+	right:				40px;
+}
+
+#navbars2{
+	width:				155px;
+	float:				left;
+	padding-left:		5px;
+}
+
+#main {
+	width:				40%;
+	margin:				auto;
+	text-align:			center;
+}
+
+#main2 {
+	width:				40%;
+	margin:				auto;
+	text-align:			center;
+}
+
+#external{
+	width:				155px;
+	float:				right;
+	padding-right:		5px;
+	text-align:			right;
+}
+
+#externals {
+	color:				black;
+	width:				80%;
+	margin:				auto;
+	text-align:			center;
+	margin-top:			35px;
+	font-weight:		bold;
+	font-family:		Times New Roman, Belvetina, Verdana, Arial, sans-serif;
+}
+
+#footer img {
+	width:				50px;
+	height:				50px;
+	border:				none;
+}
+#community{
+	float:				left;
+	position:			relative;
+	left:				5px;
+	display:			inline-block;
+}
+
+#information{
+	position:			relative;
+	display:			inline-block;
+}
+
+#paymentoptions{
+	float:				right;
+	position:			relative;
+	right:				40px;
+	display:			inline-block;
+}
+
+	
+#footer {
+	margin: 			auto;
+	font-size:			80%;
+	text-align:			center;
+	padding-top: 		1%;
+	color:				black;
+	border-top:			2px solid blue;
+}
+
+
+a:link			{ color:	blue;} 
+a:visited		{ color:	gray;}
+
+
+#joinform{
+	width:				40%;
+	margin:				auto;
+	border:				5px signgle black;
+	margin-top:			8px;
+	padding-left:		8px;
+	background-color:	black;
+	border-radius:		5px;
+}
+
+#footer{
+	text-align:			center;
+	font-size:			60%;
+	font-style:			italic;
+	color:				white;
+	clear:				both;
+	border-top:			thin solid #4169e1;
+	margin-top:			25px;
+}
+
+#footer img {
+	width:				45px;
+	height:				25px;
+}
+
+#footer a:link { text-decoration: none; }
+
+.submit{ text-align:	center; }
+
+.submit input {
+	color:				#ffffff;
+	font-size:			95%;
+	font-weight:		bold;
+	background-color:	#11dd11;	
+	border-radius:		10px;
+}
+
+.reset input { 
+	background-color: #dd1111;
+ }
+
+.fh1 {
+	font-weight:			bold;
+	text-decoration:		underline;
+	text-align:				center;
+}
+
+label {
+	width:				11em;
+	text-align:			left;
+	float:				left;
+}
+
+a:link			{	color: #4169e1;	}
+a:visited		{	color: #bbbbbb; }
+a:hover			{	color: #32cd32; }
+
+#jsmsgs {
+	color:			red;
+	font-weight:	bold;
+	text-align:		center;
+	font-size: 		80%;
+	margin-top:		15px;	
+	
+
+}
+
+select{
+	width:					230px;
+	height:					21px;
+	border-radius:			10px;
+	background:				#fff;
+}
+
+select:required{ background:	#ff0;	}
+
+select:valid{ background: #fff;	}
+
+select:focus:invalid{ background: #f00; }
+
+textarea{
+	padding:			3px;
+	width:				400px;
+	border-radius:		10px;
+	background:			#fff no-repeat top right;	
+}
+
+textarea:required{ background-image: url('../imageFolder/required.png');  }
+
+textarea:valid{ background-image: url('../imageFolder/valid.png');  }
+
+textarea:focus:invalid{ background-image: url('../imageFolder/invalid.png');  }
+
+input[type=text], input[type=password], input[type=email] {
+	width:			225px;
+	height:			16px;
+	border-radius:	10px;
+	padding-left:	3px;
+}
+
+input:not([type=submit]):not([type=checkbox]):not([type=reset]){
+	background:		#fff no-repeat top right;
+}
+
+input:not([type=submit]):not([type=checkbox]):required{
+	background-image:url('../images/required.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):valid{
+	background-image:url('../images/valid.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):focus:invalid{
+	background-image:url('../images/invalid.png');
+}
+
+.red { color: red; }
+.bold { font-weight: bold; }
+.green { color: green; }
+
+#icons {
+	width:				80%;
+	margin:				auto;
+	text-align:			center;
+	margin-top:			35px;
+	font-style:			italic;
+	font-weight:		bold;
+}
+
+#icons img {
+	width:			225px;
+	height:			225px;
+}
+
+#icons a:link { text-decoration: none; }
+
+#icon1{
+	float:				left;
+	color:				blue;
+	position:			relative;
+	left:				40px;
+	display:			inline-block;
+}
+
+#icon2 {
+	position:			relative;
+	display:			inline-block;
+}
+
+#icon3 {
+	float:				right;
+	color:				red;
+	position:			relative;
+	right:				40px;
+	display:			inline-block;
+}
+
+#registered {
+	color:				pink;
+	text-align:			center;
+	font-style:			italic;
+	font-weight:		bold;
+}
+
+
+.logerr {
+	color:				red;
+	font-weight:		bold;
+	font-style:			italic;
+	font-size:			95%;
+	padding-left:		10px;
+}
