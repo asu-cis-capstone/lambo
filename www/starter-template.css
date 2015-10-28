@@ -49,5 +49,31 @@ body {
 	border-top:			2px solid white;
 }
 
-a:link			{ color:	#6495ed;} 
-a:visited		{ color:	orange;}
+/*a:link			{ color:	#6495ed;} 
+a:visited		{ color:	orange;}*/
+
+.im-centered {
+	display: inline-block;
+	margin:5%;
+	text-align: center;
+}
+
+.col-lg-4 p {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+.btn {
+	color:black;
+	margin: 3%;
+
+}
+
+.form-group input{
+	width: 30%;
+}
+
+.form-group select{
+	width:30%;
+}
