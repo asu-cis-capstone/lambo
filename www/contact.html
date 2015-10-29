@@ -58,7 +58,21 @@
 
       <div class="starter-template">
         <h1>Contact Us</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <form role="form">
+        <div class="form-group">
+          <label for="First Name">First Name:</label>
+          <input type="text" class="form-control" id="fname" placeholder="First Name">
+          <label for="Last Name">Last Name:</label>
+          <input type="text" class="form-control" id="lname" placeholder="Last Name">
+          <label for="Email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+          <label for="Phone Number">Phone Number:</label>
+          <input type="tel" class="form-control" id="phonenum" placeholder="Phone Number">
+          <label for="Message">Message:</label>
+          <input type="text" class="form-control" id="Message" placeholder="Message" rows="2">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
       </div>
 
     </div><!-- /.container -->
