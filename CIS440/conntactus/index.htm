@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  	
+  <head>
+    <!-- Meta tag -->
+	<meta name= "robots" content="noindex,nofollow"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <!-- Link tag for CSS -->
+    <link type="text/css" rel="stylesheet" href="../stylesheet/member.css" />
+	
+	<!-- Link tag for Favicon -->
+	<link type="image/logo" rel="icon" href="../images/smalllogo.PNG" />
+	
+	<!-- JavaAcript tags-->
+	<script type="text/javascript" src="../js/message.js"></script>
+	
+	<!-- Web Page Title -->
+    <title>Conntact Us Page</title>
+
+  </head>
+
+  <body>
+	<div id="header">
+      <p>
+		<a href="../index.htm">
+		  <img src="../images/logo.png" alt=" On Point Logo" />
+		</a>
+      </p>	
+	</div>
+  
+  	<div id="navbars2">
+			<p><a href="../index.htm"> Home</a></p>
+			<p><a href="../serves"> Serves</a></p>
+			<p><a href="../aboutus"> About Us</a></p>
+			<p><a href="../conntactus"> Conntact Us</a></p>
+			<p><a href="../gallery"> Gallery</a></p>
+  </div >
+	
+	
+	<div id="main">
+		<p>Welcome to On Point Mobile Detailing. </p>
+		<p>Here you can conntact us through Email.</p>
+	</div>
+	
+	<form id="joinform" action="https://webapp4.asu.edu/pubtools/Mail" method="post">
+		<p class="fh1">Email Form</p>
+		<p>
+			<!-- 3 HIDDEN ELEMENTS FOR EMAIL PROCESSING -->
+			<input type="hidden" name="sendto" value="onpointmobiledetailing@gmail.com" />
+			<input type="hidden" name="subject" value="Website Contact Request" />
+			<input type="hidden" name="location" 
+				value="http://....thankyou.htm" />
+			
+			<!-- name -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="email"
+			autofocus
+			required 
+			title="Name: 4-30 chars, u/1 case letters, and - or ' only!'"
+			pattern="[a-zA-Z' ]{4,30}"
+			onfocus="namemsg()"
+			/>
+			<br />		
+
+			<!-- Email -->
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" placeholder="email"
+			required 
+			title="Email: 6-50 chars, valid email addy only!"
+			pattern="[a-z0-9-_$.]+@[a-z0-9-]+\.[a-z]{2,16}"
+			maxlength="50"
+			onfocus="emailmsg()"
+			/>
+			<br />	
+			
+			<!-- phonenumber -->
+			<label for="phonenumber">PhoneNumber:</label>
+			<input type="text" id="phone" name="phone" placeholder="phonenumber"
+			required
+			title="Phonenumber: 10 numbers!"
+			pattern="[0-9]{10,10}"
+			onfocus="phonemsg()"
+			/>
+			<br />	
+			
+			<!-- comments-->
+			Comments:
+			<br />
+			<textarea id="comments" name="comments" 
+			rows="2" cols="49" 
+			required
+			maxlength="500" 
+			title="Please enter your comments (1-500 chars)..."
+			onfocus="commentmsg()"></textarea>
+		</p>
+		
+		<p class="submit">
+			<input type="submit" value="Send Email!" onfocus="sendmsg()" />
+			<span class="reset">
+				<input type="reset" value="Clear Form!" 
+				onclick="history.go(0)"
+				onfocus="clearmsg()" />
+			</span>
+		</p>
+	
+	</form>
+	
+	<p id="jsmsgs"> </p>
+	
+	
+	<div id="footer">
+	<div id= "community">
+   <td> Community </td>
+   <p>
+   <td><img src="../images/facebook.ico" alt=" Facebook Icon" /></td>
+   <td><img src="../images/twitter.ico" alt=" Twitter Icon" /></td>
+   <td><img src="../images/instagram.ico" alt=" Instagram Icon" /></td>
+   </p>
+   
+   </div>
+   
+   <div id="information">
+   <p> Scottsdale, Arizona </p>
+   <p> 480-707-7744</p>
+   <p> Be sure to check us out on Instagram</p>
+   <p> @OnPointDetailing_Az</p>
+   </div>
+	
+	<div id="paymentoptions"> 
+	<td> Payment Options </td>
+	<p>
+   <td><img src="../images/cash.ico" alt="Cash Icon" /></td>
+   <td><img src="../images/check.ico" alt="Check Icon" /></td>
+   <td><img src="../images/visa.ico" alt="Visa Icon" /></td>
+   <td><img src="../images/mastercard.ico" alt="Mastercard Icon" /></td>
+   </p>
+	
+	</div>
+
+  </div>
+	
+  </body>
+
+</html>
