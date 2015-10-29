@@ -71,6 +71,11 @@ a:visited		{ color:	orange;}*/
 
 }
 
+ .form-img img{
+	float:		right;
+	width: 		45%;
+ }
+ 
 .form-group input{
 	width: 30%;
 }
