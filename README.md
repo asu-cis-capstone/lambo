@@ -13,10 +13,6 @@ On Point Detailing's new website will provide:
 
 1. Have a web server running a full LAMP stack
 2. Drop the contents of the www directory into your web server's root directory
-3. Run HelloWorld.sql to create and populate the DB with test data
-4. Edit DBInfo.template, replacing the server, username, and password fields with values that correspond to your configuration 
-5. Save your new DBInfo.template as DBInfo.config
-
 
 ## Project Team
 
