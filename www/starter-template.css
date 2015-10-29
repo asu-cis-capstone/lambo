@@ -99,3 +99,26 @@ a:visited		{ color:	orange;}*/
 	padding:	1%
 }
 /* End of Gallery CSS Code //
+
+/* Homepage Code */
+.index-body{
+	height:			90%;
+	width:			90%;
+	margin:			auto;
+	margin-top:		3%;
+}
+.index-body img{
+	height:		60%;
+	width:		50%;
+	left:		0px;
+}
+.adbox {
+	border: 		1px solid white ;
+	width:			40%;
+	height:			50%;
+	right:			0px;
+	margin-right: 	3%;
+	text-align: 	center;
+	float:			right;
+}
+/* End of Homepage Code */
