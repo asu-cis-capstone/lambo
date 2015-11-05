@@ -99,9 +99,10 @@ a:visited		{ color:	orange;}*/
 	border-collapse: 	collapse;
 }
 .Pics #smallPicTable img{
-	height:		100%;
+	height:		125px;
 	width:		100%;
-	padding:	1%
+	padding:	1%;
+	border:		0;
 }
 /* End of Gallery CSS Code //
 
