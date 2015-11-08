@@ -40,13 +40,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">On Point Detailing</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
@@ -56,10 +56,25 @@
 
     <div class="container">
 
-      <div class="starter-template">
         <h1>Contact Us</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+        <form role="form">
+		<div class ="form-img">
+		<p><img src="images/contactus.jpg" alt="Car Icon" /></p>
+		</div>
+        <div class="form-group">
+          <label for="First Name">First Name:</label> <br />
+          <input type="text" class="form-control" id="fname" placeholder="First Name"> <br />
+          <label for="Last Name">Last Name:</label> <br />
+          <input type="text" class="form-control" id="lname" placeholder="Last Name"> <br />
+          <label for="Email">Email:</label> <br />
+          <input type="email" class="form-control" id="email" placeholder="Email"> <br />
+          <label for="Phone Number">Phone Number:</label> <br />
+          <input type="tel" class="form-control" id="phonenum" placeholder="Phone Number"> <br />
+          <label for="Message">Message:</label> <br />
+		  <textarea class="form-control" id="Message" placeholder="Type your message here" rows="2" cols="49"></textarea> <br />		  
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 
     </div><!-- /.container -->
 
