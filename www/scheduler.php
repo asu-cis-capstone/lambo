@@ -147,7 +147,38 @@
     <div class="container">
 
       <h2>Appointment Scheduling</h2>
-      <p>You are scheduling an appointment for <div id='service'><?php echo $_GET['service']; ?></div></p>
+      <?php 
+        switch ($_GET['service']){
+          case "hwash":
+            echo "You are scheduling a hand wash.";
+            break;
+          case "washwax":
+            echo "You are scheduling a wash and wax.";
+            break;
+          case "washwaxclay":
+            echo "You are scheduling a wash, wax, and clay.";
+            break;
+          case "ultwash":
+            echo "You are scheduling an ultimate wash.";
+            break;
+          case "paint":
+            echo "You are scheduling a paint correction.";
+            break;
+          case "scratchswirl":
+            echo "You are scheduling a scratch/swirl removal.";
+            break;
+          case "headlight":
+            echo "You are scheduling a headlight restoration.";
+            break;
+          case "interior":
+            echo "You are scheduling an interior detail.";
+            break;
+          case "engine":
+            echo "You are scheduling an engine bay detail.";
+            break;
+          default:
+            break;
+          ?></p>
       <form role="form">
         <div class="form-group">
           <label for="First Name">First Name:</label>
