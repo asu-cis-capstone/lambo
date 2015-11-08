@@ -147,7 +147,7 @@
     <div class="container">
 
       <h2>Appointment Scheduling</h2>
-      <p>You are scheduling an appointment for <div id='service'><?php echo $_GET["service"]; ?></div></p>
+      <p>You are scheduling an appointment for <div id='service'><?php echo $_GET['service']; ?></div></p>
       <form role="form">
         <div class="form-group">
           <label for="First Name">First Name:</label>
