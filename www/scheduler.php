@@ -178,6 +178,7 @@
             break;
           default:
             break;
+          }
           ?></p>
       <form role="form">
         <div class="form-group">
