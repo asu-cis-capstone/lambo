@@ -180,26 +180,27 @@
             break;
           }
           ?></p>
-      <form role="form">
+      <form action="confirm.php" method="post">
         <div class="form-group">
+          <input type="hidden" name="service" value=<?php echo "'".$_GET['service']."'"; ?>>
           <label for="First Name">First Name:</label>
-          <input type="text" class="form-control" id="fname" placeholder="First Name">
+          <input type="text" class="form-control" id="fname" name='fname' placeholder="First Name">
           <label for="Last Name">Last Name:</label>
-          <input type="text" class="form-control" id="lname" placeholder="Last Name">
+          <input type="text" class="form-control" id="lname" name='lname' placeholder="Last Name">
           <label for="Email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="email" class="form-control" id="email" name='email' placeholder="Email">
           <label for="Phone Number">Phone Number:</label>
-          <input type="tel" class="form-control" id="phonenum" placeholder="Phone Number">
+          <input type="tel" class="form-control" id="phonenum" name="phonenum" placeholder="Phone Number">
           <label for="Model">Vehicle Make and Model:</label>
-          <input type="text" class="form-control" id="model" placeholder="Make & Model">
+          <input type="text" class="form-control" id="model" name="model" placeholder="Make & Model">
           <label for="Date">Which date would you like?</label>
-          <input type="date" class="form-control" id="date" onchange="loadCalendarApi();">
+          <input type="date" class="form-control" id="date" name="date" onchange="loadCalendarApi();">
           <label for="time">Please pick an available start time.</label>
-          <select class="form-control" id="time">
+          <select class="form-control" id="time" name="time">
             <option value="null">Select a date to see times</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" name="submit" value="submit" class="btn btn-default">Submit</button>
       </form>
 
     </div><!-- /.container -->
