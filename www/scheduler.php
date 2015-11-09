@@ -194,7 +194,7 @@
           <input type="text" class="form-control" id="model" placeholder="Make & Model">
           <label for="Date">Which date would you like?</label>
           <input type="date" class="form-control" id="date" onchange="loadCalendarApi();">
-          <label for="time">Please pick an available start time. Your service will take approximately %NUMBER% hours</label>
+          <label for="time">Please pick an available start time.</label>
           <select class="form-control" id="time">
             <option value="null">Select a date to see times</option>
           </select>
