@@ -71,6 +71,8 @@ a:visited		{ color:	orange;}*/
 
 }
 
+/* End Services CSS*/
+
  .form-img img{
 	float:		right;
 	width: 		27%;
@@ -78,14 +80,9 @@ a:visited		{ color:	orange;}*/
 	margin-right:	22%;
  }
  
-.form-group input{
+.form-group input, select{
 	width: 30%;
 }
-
-.form-group select{
-	width:30%;
-}
-/* End Services CSS*/
 
 /* Gallery CSS Code */
 #gallery {text-align:center;display:inline-block;position:relative;}
@@ -101,7 +98,7 @@ a:visited		{ color:	orange;}*/
 	border-collapse: 	collapse;
 }
 .Pics #smallPicTable img{
-	height:		125px;
+	height:		100%;
 	width:		100%;
 	padding:	1%;
 	border:		0;
