@@ -14,43 +14,44 @@ body {
 	margin: 0 auto;
 }
 
+/* Footer Code */	
+#footer {
+	margin: 			auto;
+	font-size:			90%;
+	text-align:			center;
+	color:				white;
+	border-top:			2px solid white;
+	padding-top:		1%;
+	padding-bottom:		1%;
+}
 #footer img {
 	width:				50px;
 	height:				50px;
-	border:				none;
 }
+
+#footer span{font-size:150%;font-style:italic}
 
 #community{
 	float:				left;
 	position:			relative;
-	left:				40px;
 	display:			inline-block;
+	text-align:			center;
+	padding-left:		3%;
 }
 
 #information{
 	position:			relative;
 	display:			inline-block;
+	text-align:			center;
 }
 
 #paymentoptions{
 	float:				right;
 	position:			relative;
-	right:				40px;
 	display:			inline-block;
-}
-
-	
-#footer {
-	margin: 			auto;
-	font-size:			80%;
 	text-align:			center;
-	padding-top: 		1%;
-	color:				white;
-	border-top:			2px solid white;
+	padding-right:		3%;
 }
-
-/*a:link			{ color:	#6495ed;} 
-a:visited		{ color:	orange;}*/
 
 /* Services CSS */
 .im-centered {
@@ -100,8 +101,8 @@ a:visited		{ color:	orange;}*/
 .Pics #smallPicTable img{
 	height:		100%;
 	width:		100%;
-	padding:	1%;
-	border:		0;
+	padding:	3%;
+	border:		1px solid whitesmoke;
 }
 /* End of Gallery CSS Code //
 
