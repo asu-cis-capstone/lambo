@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>About Us</title>
+    <title>Confirmation</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,8 @@
 
     <div class="container">
       <?php
-      include include_once('DBInfo.config');
+
+      include_once('DBInfo.config');
       $db = new mysqli($server,$user,$password,$db);
 
       if($db->connect_errno > 0){
@@ -75,16 +76,49 @@
 
         $query = "insert into appointments (fname,lname,email,phone,vehicle,date,time,service) values ('$fname','$lname','$email','$phone','$vehicle','$date','$time','$service')";
 
-
-        
-
         $db->query($query);
 
         $db->close();
       }
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
+
+      $summary = $fname." ".$lname." ".$service;
+
+
+        require_once ('google-api-php-client/vendor/autoload.php');
+
+        define('SCOPES', implode(' ', array(Google_Service_Calendar::CALENDAR)));
+        $client = new Google_Client();
+        $client->setClientId($clientID);
+        $client->setAuthConfigFile("client_secrets.json");
+        $client->setScopes(SCOPES);
+        $service = new Google_Service_Calendar($client);
+        $event = new Google_Service_Calendar_Event(array(
+        'summary' => $summary,
+        'location' => 'Scottsdale',
+        'description' => 'All Info',
+        'start' => array(
+        'dateTime' => '2015-11-25T08:00:00-07:00',
+        'timeZone' => 'America/Phoenix',
+        ),
+        'end' => array(
+        'dateTime' => '2015-11-25T09:00:00-07:00',
+        'timeZone' => 'America/Phoenix',
+        ),
+        'attendees' => array(
+        array('email' => 'test@test.com'),
+        ),
+        'reminders' => array(
+        'useDefault' => FALSE,
+        ),
+        ));
+        $calendar_id = $calendarID;
+        $event = $service->events->insert($calendar_id, $event);
       ?>
       <div class="starter-template">
-        <h2>Your appointment has been scheduled! We sent a confirmation email to <?php echo $_POST['email']; ?>.</h2>
+        <h2>Your appointment has been scheduled! We sent a confirmation email to <?php echo $_POST['email']; ?></h2>
         <h3>If you did not receieve an email please contact us to make sure your appointment was entered in the system.</h3>
       </div>
 

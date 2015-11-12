@@ -28,7 +28,7 @@
       // Developer Console, https://console.developers.google.com
 
       var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
-      var APIKey = 'AIzaSyCrlsIrsTN2-Weeb4oozrzBiAmUT2dFQ3s';
+      var APIKey = 'AIzaSyAK7DrUkc4lV9yG7tyFrw8qxw8bA2IF1wY';
       var calendarID = 'onpointdetailingtest@gmail.com';
 
       /**
@@ -147,7 +147,7 @@
     <div class="container">
 
       <h2>Appointment Scheduling</h2>
-      <?php 
+      <?php
         switch ($_GET['service']){
           case "hwash":
             echo "You are scheduling a hand wash.";
