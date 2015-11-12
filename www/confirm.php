@@ -66,13 +66,13 @@
       if(isset($_POST['submit']))
       {
         $date = date("Y-m-d", strtotime($_POST['date']));
-        $fname = $_POST['fname'];
+        */$fname = $_POST['fname'];
         $lname = $_POST['lname'];
-        $email = $_POST['email'];
+        /*$email = $_POST['email'];
         $phone = $_POST['phonenum'];
         $vehicle = $_POST['model'];
         $time = $_POST['time'];
-        $service = $_POST['service'];
+        */$service = $_POST['service'];/*
 
         $query = "insert into appointments (fname,lname,email,phone,vehicle,date,time,service) values ('$fname','$lname','$email','$phone','$vehicle','$date','$time','$service')";
 
