@@ -1,0 +1,12 @@
+//Team Lambo
+//CIS 440
+//Fall Semester
+
+					Testing Plan
+
+Send server to Stephen Neumann.
+Allow him and his customers to test and navigate through the website.
+Manual test by our team in order to try to "break" the website.
+Try to break length and validation requirements in appointment section.
+Adding/changing gallery and advertisment images.
+Purposefully use bad API calls to simulate the API changing in the future.
