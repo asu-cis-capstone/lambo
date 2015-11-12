@@ -57,6 +57,11 @@
     <div class="container">
       <?php
 
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
+
+
       include_once('DBInfo.config');
       /*$db = new mysqli($server,$user,$password,$db);
 
