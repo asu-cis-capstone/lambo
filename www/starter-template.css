@@ -133,4 +133,9 @@ body {
 	text-align: 	center;
 	float:			right;
 }
+
+#myAds img {
+	width:				500px;
+	height:				500px;
+}
 /* End of Homepage Code */
