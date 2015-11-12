@@ -87,8 +87,9 @@ body {
 
 .form-image img{
 	float:		right;
-	width: 		35%;
+	width: 		50%;
 	height:		35%;
+	margin-right:	15%;
 }
 
 /* Gallery CSS Code */
