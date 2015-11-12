@@ -58,7 +58,7 @@
       <?php
 
       include_once('DBInfo.config');
-      $db = new mysqli($server,$user,$password,$db);
+      /*$db = new mysqli($server,$user,$password,$db);
 
       if($db->connect_errno > 0){
         die('Unable to connect to database [' . $db->connect_error . ']');
@@ -79,7 +79,7 @@
         $db->query($query);
 
         $db->close();
-      }
+      }*/
       ini_set('display_errors', 1);
       ini_set('display_startup_errors', 1);
       error_reporting(E_ALL);
