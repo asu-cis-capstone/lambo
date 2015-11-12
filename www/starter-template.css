@@ -74,15 +74,21 @@ body {
 
 /* End Services CSS*/
 
- .form-img img{
+.form-img img{
 	float:		right;
 	width: 		27%;
 	height:		27%;
 	margin-right:	22%;
- }
+}
  
 .form-group input, select{
 	width: 30%;
+}
+
+.form-image img{
+	float:		right;
+	width: 		35%;
+	height:		35%;
 }
 
 /* Gallery CSS Code */
