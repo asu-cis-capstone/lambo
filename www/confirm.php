@@ -63,6 +63,7 @@
 
 
       include_once('DBInfo.config');
+      date_default_timezone_set("America/Phoenix");
       /*$db = new mysqli($server,$user,$password,$db);
 
       if($db->connect_errno > 0){
@@ -70,14 +71,14 @@
       }
       if(isset($_POST['submit']))
       {
-        $date = date("Y-m-d", strtotime($_POST['date']));
-        */$fname = $_POST['fname'];
+        */$date = date("Y-m-d", strtotime($_POST['date']));
+        $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         /*$email = $_POST['email'];
         $phone = $_POST['phonenum'];
         $vehicle = $_POST['model'];
-        $time = $_POST['time'];
-        */$service = $_POST['service'];/*
+        */$time = $_POST['time'];
+        $service = $_POST['service'];/*
 
         $query = "insert into appointments (fname,lname,email,phone,vehicle,date,time,service) values ('$fname','$lname','$email','$phone','$vehicle','$date','$time','$service')";
 
@@ -90,6 +91,8 @@
       error_reporting(E_ALL);
 
       $summary = $fname." ".$lname." ".$service;
+
+      $startdatetime = $date."T".$time.":00-07:00";
 
 
         require_once ('google-api-php-client/vendor/autoload.php');
@@ -105,11 +108,11 @@
         'location' => 'Scottsdale',
         'description' => 'All Info',
         'start' => array(
-        'dateTime' => '2015-11-25T08:00:00-07:00',
+        'dateTime' => $startdatetime,
         'timeZone' => 'America/Phoenix',
         ),
         'end' => array(
-        'dateTime' => '2015-11-25T09:00:00-07:00',
+        'dateTime' => '2015-11-25T14:00:00-07:00',
         'timeZone' => 'America/Phoenix',
         ),
         'attendees' => array(

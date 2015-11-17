@@ -27,7 +27,7 @@ h. Take note of the Client ID and email
 
 3. Extract google-api-client-v2.0.0-RC2.zip in the current directory  
 a. You will end up with a structure like so  
-![alt tag](https://raw.github.com/asu-cis-capstone/lambo/master/Support Documents/filestructure.jpg)
+![alt tag](https://raw.github.com/asu-cis-capstone/lambo/master/Support Documents/FileStructure.jpg)
 
 4. Edit DBInfo.template with your information and save it as "DBInfo.config"
 
