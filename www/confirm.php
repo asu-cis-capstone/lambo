@@ -57,35 +57,40 @@
     <div class="container">
       <?php
 
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
 
 
-        include_once('DBInfo.config');
-        date_default_timezone_set("America/Phoenix");
+      include_once('DBInfo.config');
+      /*$db = new mysqli($server,$user,$password,$db);
+
+      if($db->connect_errno > 0){
+        die('Unable to connect to database [' . $db->connect_error . ']');
+      }
+      if(isset($_POST['submit']))
+      {
         $date = date("Y-m-d", strtotime($_POST['date']));
-        $fname = $_POST['fname'];
+        */$fname = $_POST['fname'];
         $lname = $_POST['lname'];
-        $email = $_POST['email'];
+        /*$email = $_POST['email'];
         $phone = $_POST['phonenum'];
         $vehicle = $_POST['model'];
         $time = $_POST['time'];
-        $service = $_POST['service'];
+        */$service = $_POST['service'];/*
 
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
+        $query = "insert into appointments (fname,lname,email,phone,vehicle,date,time,service) values ('$fname','$lname','$email','$phone','$vehicle','$date','$time','$service')";
 
-        $summary = $fname." ".$lname." ".$service;
+        $db->query($query);
 
-        $startdatetime = $date."T".$time.":00-07:00";
+        $db->close();
+      }*/
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
 
-        $unixstartime =  strtotime($startdatetime);
+      $summary = $fname." ".$lname." ".$service;
 
-        $unixendtime = strtotime('+1 hour', $unixstartime);
-
-        $enddatetime = date("c",$unixendtime);
 
         require_once ('google-api-php-client/vendor/autoload.php');
 
@@ -100,26 +105,23 @@
         'location' => 'Scottsdale',
         'description' => 'All Info',
         'start' => array(
-        'dateTime' => $startdatetime,
+        'dateTime' => '2015-11-25T08:00:00-07:00',
         'timeZone' => 'America/Phoenix',
         ),
         'end' => array(
-        'dateTime' => $enddatetime,
+        'dateTime' => '2015-11-25T09:00:00-07:00',
         'timeZone' => 'America/Phoenix',
         ),
         'attendees' => array(
-          array('email' => $email),
-          array('email' => $emailaddress),
+        array('email' => 'test@test.com'),
         ),
         'reminders' => array(
-          'useDefault' => FALSE,
+        'useDefault' => FALSE,
         ),
         ));
-        $optionalArguments = array("sendNotifications"=>true);
         $calendar_id = $calendarID;
-        $event = $service->events->insert($calendar_id, $event, $optionalArguments);
+        $event = $service->events->insert($calendar_id, $event);
       ?>
-      
       <div class="starter-template">
         <h2>Your appointment has been scheduled! We sent a confirmation email to <?php echo $_POST['email']; ?></h2>
         <h3>If you did not receieve an email please contact us to make sure your appointment was entered in the system.</h3>
