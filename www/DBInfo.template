@@ -1,8 +1,5 @@
 <?php
-$server = 'localhost';
-$user = 'user';
-$password = 'password';
-$db = 'OnPointDetailing';
-$clientID = 'aldkfjaldfkjsadlfkjadasdfasdfsafasfdsslfj.apps.googleusercontent.com'
-$calendarID = 'blahlablah@gmail.com'
+$emailaddress = '';
+$clientID = 'aldkfjaldfkjsadlfkjadasdfasdfsafasfdsslfj.apps.googleusercontent.com';
+$calendarID = 'blahlablah@gmail.com';
 ?>
