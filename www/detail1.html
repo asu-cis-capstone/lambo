@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="images/smalllogo.png">
 	
 	<title>On Point Detailing</title>
    
@@ -33,9 +33,9 @@
   </head>
 
   <body>
-    
+    <div id="header">
       <img id="logo" src="images/logo.png" alt=" On Point Logo" class="img-responsive center-block"/>
-    
+    </div>
 	<nav class="navbar navbar-inverse navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">On Point Detailing</a>
+          <a class="navbar-brand">On Point Detailing</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -61,21 +61,28 @@
 	<div class="container">
 		<div class ="form-image">
 			<p><img src="images/1.jpg" alt="Ad1" /></p>
+		<p class="h2">Checkout our different Washes!</p>
+		<li><a href="scheduler.php?service=hwash">$30 - Hand Wash</a></li>
+		<p>Hand wash and dry, Clean door jams, wheels, dress tires, dress exterior plastics, vaccum/wipe down interior</p>
+		<li><a href="scheduler.php?service=washwax">$75 - Wash and Wax</a></li>
+		<p>Everything included in the hand wash plus: Hand wax, wheel polish/sealant, dress interior</p>
+		<li><a href="scheduler.php?service=washwaxclay">$100 - Wash, Wax, and Clay</a></li>
+		<p>Everything in the Wash & Wax plus: hand clay bar treatment to remove all imperfections</p>
+		<li><a href="scheduler.php?service=ultwash">$150 - Ultimate Wash</a></li>
+		<p>Everything in the Wash, Wax & Clay plus: shampoo carpet, clean and protect leather, clean vents and instrument panel, detail engine bay</p>
+		<p><a href="services.html">Check out our other services and reserve now!</a></p>
 		</div>
-		<p class="h2">Detailed Information:</p>
-		<li>New customers free car wash</li>
-		<li>XXXXXX</li>
-		<li>XXXXXX</li>
-		<p><a href="scheduler.php?service=hwash">Reserve Now</a></p>
-		<p><a href="index.html">Back to Home Page</a></p>
-	</div><!-- /.container -->
 
 	<div id="footer">   
 		<div id= "community">
 			<p><span>Community</span><br>
-			<img src="images/facebook.ico" alt=" Facebook Icon" />
-			<img src="images/twitter.ico" alt=" Twitter Icon" />
-			<img src="images/instagram.ico" alt=" Instagram Icon" /></p>   
+			<a href="https://twitter.com/onpoint_AZ"
+			onclick="window.open(this.href); return false;">
+			<img src="images/twitter.ico" alt=" Twitter Icon" /></a>
+			
+			<a href="https://www.instagram.com/onpointdetailing_az/"
+			onclick="window.open(this.href); return false;">
+			<img src="images/instagram.ico" alt=" Instagram Icon" /></a></p>  
 		</div>
    
 		<div id="information">
@@ -94,6 +101,7 @@
 			<img src="images/mastercard.ico" alt="Mastercard Icon" /></p>
 		</div> 
     </div>
+	</div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

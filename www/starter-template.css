@@ -1,5 +1,4 @@
 body {
-  padding-top: 10px;
   background-color: black;
   color: white;
 }
@@ -16,7 +15,7 @@ body {
 
 /* Footer Code */	
 #footer {
-	margin: 			auto;
+	margin-top: 		5px;
 	font-size:			90%;
 	text-align:			center;
 	color:				white;
@@ -36,7 +35,6 @@ body {
 	position:			relative;
 	display:			inline-block;
 	text-align:			center;
-	padding-left:		3%;
 }
 
 #information{
@@ -50,7 +48,6 @@ body {
 	position:			relative;
 	display:			inline-block;
 	text-align:			center;
-	padding-right:		3%;
 }
 
 /* Services CSS */
@@ -68,8 +65,7 @@ body {
 
 .btn {
 	color:black;
-	margin: 3%;
-
+	margin-bottom: 2%;
 }
 
 /* End Services CSS*/
@@ -87,9 +83,14 @@ body {
 
 .form-image img{
 	float:		right;
-	width: 		50%;
-	height:		35%;
-	margin-right:	15%;
+	width: 		700px;
+	height:		300px;
+	padding:	10px;
+}
+.form-image{
+	margin:auto;
+	border-bottom:auto;
+	padding:	5px;
 }
 
 /* Gallery CSS Code */
@@ -139,3 +140,8 @@ body {
 	height:				300px;
 }
 /* End of Homepage Code */
+
+/* Header Code */
+#header{
+	background-color:#646466;
+}
