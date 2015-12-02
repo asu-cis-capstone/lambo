@@ -1,5 +1,6 @@
 <?php
-$emailaddress = '';
+$emailaddress = 'blahlablah';
+$emailDomain = '@gmail.com';
 $clientID = 'aldkfjaldfkjsadlfkjadasdfasdfsafasfdsslfj.apps.googleusercontent.com';
 $calendarID = 'blahlablah@gmail.com';
 ?>
