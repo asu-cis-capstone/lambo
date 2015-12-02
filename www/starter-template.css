@@ -34,20 +34,17 @@ body {
 	float:				left;
 	position:			relative;
 	display:			inline-block;
-	text-align:			center;
 }
 
 #information{
 	position:			relative;
 	display:			inline-block;
-	text-align:			center;
 }
 
 #paymentoptions{
 	float:				right;
 	position:			relative;
 	display:			inline-block;
-	text-align:			center;
 }
 
 /* Services CSS */
@@ -138,6 +135,7 @@ body {
 #myAds img {
 	width:				500px;
 	height:				300px;
+	margin-left: 27px;
 }
 /* End of Homepage Code */
 
