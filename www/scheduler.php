@@ -17,6 +17,48 @@
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
+    <?php 
+    switch ($_GET['service']){
+          case "hwash":
+            $serviceText="a hand wash.";
+            $maxTime=2;
+            break;
+          case "washwax":
+            $serviceText="a wash and wax.";
+            $maxTime=4;
+            break;
+          case "washwaxclay":
+            $serviceText="a wash, wax, and clay.";
+            $maxTime=5;
+            break;
+          case "ultwash":
+            $serviceText="an ultimate wash.";
+            $maxTime=8;
+            break;
+          case "paint":
+            $serviceText="a paint correction.";
+            $maxTime=8;
+            break;
+          case "scratchswirl":
+            $serviceText="a scratch/swirl removal.";
+            $maxTime=7;
+            break;
+          case "headlight":
+            $serviceText="a headlight restoration.";
+            $maxTime=1;
+            break;
+          case "interior":
+            $serviceText="an interior detail.";
+            $maxTime=3;
+            break;
+          case "engine":
+            $serviceText="an engine bay detail.";
+            $maxTime=1;
+            break;
+          default:
+            break;
+          }
+      ?>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -46,8 +88,8 @@
        * appropriate message is printed.
        */
       function listUpcomingEvents() {
-        var availableTimes = ["08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00"];
-        var allTimes = ["08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00"];
+        var availableTimes = ["08:00","08:30","09:00","09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30"];
+        var allTimes = ["08:00","08:30","09:00","09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30"];
         var startIndex;
         var endIndex;
         var startDate = new Date(document.getElementById('date').value.substring(0,4),document.getElementById('date').value.substring(5,7)-1,document.getElementById('date').value.substring(8,10),0,0,0,0);
@@ -82,19 +124,28 @@
                   endIndex = j;
                 }
                 if (j>=startIndex && j===endIndex)
-                  availableTimes.splice(startIndex,endIndex-startIndex);
+                  for (k=startIndex;k<endIndex;k++)
+                    availableTimes[k] = "TAKEN";
               }
             }
           }
 
+          var length = <?php echo $maxTime; ?> * 2;
+
           var times = "";
+          for (l = 0; l < allTimes.length; l++)
+            if (availableTimes[l]=="TAKEN")
+              if(length > 1)
+                for(z=1;z<length;z++)
+                  availableTimes[l-z] = "TAKEN";     
+                  
+
           for (k = 0; k < allTimes.length; k++)
-          {
-            if ($.inArray(allTimes[k],availableTimes) != -1)
+            if (availableTimes[k]!="TAKEN")
               times += '<option value="'+allTimes[k]+'">'+allTimes[k]+'</option>';
             else
-              times += '<option disabled="true" value="'+allTimes[k]+'">'+allTimes[k]+'</option>';
-          }
+              times += '<option disabled="true" value="'+allTimes[k]+'">'+allTimes[k]+'</option>';    
+
           listTimes(times);
         });
       }
@@ -148,37 +199,8 @@
 
       <h2>Appointment Scheduling</h2>
       <?php
-        switch ($_GET['service']){
-          case "hwash":
-            echo "You are scheduling a hand wash.";
-            break;
-          case "washwax":
-            echo "You are scheduling a wash and wax.";
-            break;
-          case "washwaxclay":
-            echo "You are scheduling a wash, wax, and clay.";
-            break;
-          case "ultwash":
-            echo "You are scheduling an ultimate wash.";
-            break;
-          case "paint":
-            echo "You are scheduling a paint correction.";
-            break;
-          case "scratchswirl":
-            echo "You are scheduling a scratch/swirl removal.";
-            break;
-          case "headlight":
-            echo "You are scheduling a headlight restoration.";
-            break;
-          case "interior":
-            echo "You are scheduling an interior detail.";
-            break;
-          case "engine":
-            echo "You are scheduling an engine bay detail.";
-            break;
-          default:
-            break;
-          }
+        
+          echo "You are scheduling ".$serviceText;
           ?></p>
       <form action="confirm.php" method="post">
         <div class="form-group">
@@ -195,7 +217,7 @@
           <input type="text" class="form-control" id="model" name="model" placeholder="Make & Model">
           <label for="Date">Which date would you like?</label>
           <input type="date" class="form-control" id="date" name="date" onchange="loadCalendarApi();">
-          <label for="time">Please pick an available start time.</label>
+          <label for="time">Please pick an available start time. Your appointment will take approximately <?php echo $maxTime; ?> hours at most.</label>
           <select class="form-control" id="time" name="time">
             <option value="null">Select a date to see times</option>
           </select>

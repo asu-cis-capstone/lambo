@@ -77,7 +77,7 @@
         ini_set('display_startup_errors', 1);
         error_reporting(E_ALL);
 
-        $summary = $fname." ".$lname." ".$service;
+        $summary = $fname." ".$lname." ".$service." ".$phone." ".$vehicle;
 
         $startdatetime = $date."T".$time.":00-07:00";
 
