@@ -109,7 +109,7 @@
         ),
         'attendees' => array(
           array('email' => $email),
-          array('email' => $emailaddress),
+          array('email' => $emailaddress."+Appointment".$emailDomain),
         ),
         'reminders' => array(
           'useDefault' => FALSE,
@@ -122,6 +122,7 @@
       
       <div class="starter-template">
         <h2>Your appointment has been scheduled! We sent a confirmation email to <?php echo $_POST['email']; ?></h2>
+        <h3>We will contact you within 2 business days to let you know a more accurate length for your service based on your vehicle.</h3>
         <h3>If you did not receieve an email please contact us to make sure your appointment was entered in the system.</h3>
       </div>
 
