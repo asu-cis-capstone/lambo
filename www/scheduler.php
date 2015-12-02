@@ -134,17 +134,28 @@
 
           var times = "";
           for (l = 0; l < allTimes.length; l++)
+          {
             if (availableTimes[l]=="TAKEN")
               if(length > 1)
                 for(z=1;z<length;z++)
                   availableTimes[l-z] = "TAKEN";     
+            if (l + <?php echo $maxTime*2;?> > allTimes.length - 1 )
+              availableTimes[l] = "TAKEN";
+          }
                   
 
           for (k = 0; k < allTimes.length; k++)
             if (availableTimes[k]!="TAKEN")
               times += '<option value="'+allTimes[k]+'">'+allTimes[k]+'</option>';
             else
-              times += '<option disabled="true" value="'+allTimes[k]+'">'+allTimes[k]+'</option>';    
+              times += '<option disabled="true" value="'+allTimes[k]+'">'+allTimes[k]+'</option>';
+
+          allTaken=true;
+          for (x=0;x<availableTimes.length;x++)
+            if(availableTimes[x]!="TAKEN")
+              allTaken=false;
+          if(allTaken)
+            times = '<option disabled="true">There are no available times, please select another day</option>';
 
           listTimes(times);
         });
@@ -217,7 +228,7 @@
           <input type="text" class="form-control" id="model" name="model" placeholder="Make & Model">
           <label for="Date">Which date would you like?</label>
           <input type="date" class="form-control" id="date" name="date" onchange="loadCalendarApi();">
-          <label for="time">Please pick an available start time. Your appointment will take approximately <?php echo $maxTime; ?> hours at most.</label>
+          <label for="time">Please pick an available start time, unavailable times will be unselectable. <br>Your appointment will take approximately <?php echo $maxTime; ?> hours at most.</label>
           <select class="form-control" id="time" name="time">
             <option value="null">Select a date to see times</option>
           </select>
