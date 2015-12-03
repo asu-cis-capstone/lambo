@@ -88,6 +88,7 @@ body {
 	margin:auto;
 	border-bottom:auto;
 	padding:	5px;
+	overflow: hidden;
 }
 
 /* Gallery CSS Code */
@@ -136,6 +137,10 @@ body {
 	width:				500px;
 	height:				300px;
 	margin-left: 		27px;
+	overflow: hidden;
+}
+#about{
+	overflow: hidden;
 }
 /* End of Homepage Code */
 
