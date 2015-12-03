@@ -125,23 +125,26 @@
         <h3>If you did not receieve an email please contact us to make sure your appointment was entered in the system.</h3>
       </div>
 
-    </div><!-- /.container -->
+    
 
     <div id="footer">   
 	    <div id= "community">
-			<td> Community </td>
-				<p>
-					<td><img src="images/facebook.ico" alt=" Facebook Icon" /></td>
-					<td><img src="images/twitter.ico" alt=" Twitter Icon" /></td>
-					<td><img src="images/instagram.ico" alt=" Instagram Icon" /></td>
-				</p>   
+			<p><span>Community</span><br>
+			<a href="https://twitter.com/onpoint_AZ"
+			onclick="window.open(this.href); return false;">
+			<img src="images/twitter.ico" alt=" Twitter Icon" /></a>
+			
+			<a href="https://www.instagram.com/onpointdetailing_az/"
+			onclick="window.open(this.href); return false;">
+			<img src="images/instagram.ico" alt=" Instagram Icon" /></a></p>   
 	    </div>
 	   
 		<div id="information">
-			<p> Scottsdale, Arizona </p>
-			<p> 480-707-7744</p>
-			<p> Be sure to check us out on Instagram</p>
-			<p> @OnPointDetailing_Az</p>
+			<p><span>Company Information</span><br>
+				Location: Scottsdale, Arizona<br>
+		        Phone #: 480-707-7744<br>
+		        Be sure to check us out on Instagram!<br>
+		        @OnPointDetailing_Az</p>
 		</div>
 		
 		<div id="paymentoptions"> 
@@ -154,6 +157,7 @@
 				</p>	
 		</div>
 	</div>
+	</div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
