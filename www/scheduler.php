@@ -225,7 +225,7 @@
           <input type="tel" class="form-control" id="phonenum" name="phonenum" placeholder="Phone Number">
           <label for="Model">Vehicle Make and Model:</label>
           <input type="text" class="form-control" id="model" name="model" placeholder="Make & Model">
-          <label for="Date">Which date would you like? Press the arrow on the right side of the box to bring up a calendar.</label>
+          <label for="Date">Please enter your desired date in MM/DD/YYYY format. If supported by your browser click the arrow in the right to open a calendar</label>
           <input type="date" class="form-control" id="date" name="date" onchange="loadCalendarApi();">
           <label for="time">Please pick an available start time, unavailable times will be unselectable. <br>Your appointment will take approximately <?php echo $maxTime; ?> hours at most.</label>
           <select class="form-control" id="time" name="time">
